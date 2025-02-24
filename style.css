@@ -1,0 +1,107 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: auto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', monospace;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.game-container {
+  width: 50vw;
+  height: 100vh;
+  align-items: center;
+  background-color: #a5c52a;
+}
+
+@media screen and (max-width: 62.5em) {
+  .game-container{
+    width: 100%;
+  }
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.name {
+  text-align: left;
+}
+
+.score {
+  text-align: right;
+}
+
+.box {
+  min-width: 10vh;
+  min-height: 12vh;
+  display: inline-block;
+  padding: 10px;
+  border: 2px dashed black;
+}
+
+#player-choice, #computer-choice {
+  font-size: 80px;
+  align-items: center;
+  
+}
+
+.game {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.section {
+  justify-content: center;
+  align-items: center;
+}
+
+.section h3{
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 10px;
+}
+
+.status {
+  background-color: #f4c542;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.choices button {
+  margin-top: 15px;
+  min-height: 15vh;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2vw ;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  background-color: white;
+}
